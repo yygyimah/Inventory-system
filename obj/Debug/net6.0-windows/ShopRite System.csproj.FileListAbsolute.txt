@@ -3,19 +3,27 @@ C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-w
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\ShopRite System.runtimeconfig.json
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\ShopRite System.dll
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\ShopRite System.pdb
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.csproj.AssemblyReference.cache
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.attendant.resources
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.category.resources
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.Form1.resources
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.Form2.resources
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.product.resources
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.Properties.Resources.resources
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.sales.resources
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.splash.resources
-C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite_System.users.resources
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.csproj.GenerateResource.cache
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.AssemblyInfoInputs.cache
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.AssemblyInfo.cs
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.csproj.CoreCompileInputs.cache
+C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.csproj.CopyComplete
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.dll
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\refint\ShopRite System.dll
 C:\Users\Junior\Desktop\UG\L300 Sem 2\DCIT318\ShopRite System\obj\Debug\net6.0-windows\ShopRite System.pdb

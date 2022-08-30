@@ -34,12 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Uname = new System.Windows.Forms.TextBox();
+            this.Pass = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Role = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -96,59 +97,64 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "PASSWORD";
             // 
-            // textBox1
+            // Uname
             // 
-            this.textBox1.Location = new System.Drawing.Point(340, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 23);
-            this.textBox1.TabIndex = 5;
+            this.Uname.Location = new System.Drawing.Point(340, 105);
+            this.Uname.Name = "Uname";
+            this.Uname.Size = new System.Drawing.Size(151, 23);
+            this.Uname.TabIndex = 5;
             // 
-            // textBox2
+            // Pass
             // 
-            this.textBox2.Location = new System.Drawing.Point(340, 172);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 23);
-            this.textBox2.TabIndex = 6;
+            this.Pass.Location = new System.Drawing.Point(340, 172);
+            this.Pass.Name = "Pass";
+            this.Pass.Size = new System.Drawing.Size(151, 23);
+            this.Pass.TabIndex = 6;
+            this.Pass.UseSystemPasswordChar = true;
             // 
             // button2
             // 
             this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.Color.Firebrick;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(335, 233);
+            this.button2.Location = new System.Drawing.Point(335, 242);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 27);
             this.button2.TabIndex = 10;
             this.button2.Text = "LOGIN";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(416, 233);
+            this.button1.Location = new System.Drawing.Point(416, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 27);
             this.button1.TabIndex = 11;
             this.button1.Text = "RESET";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // Role
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.Color.Firebrick;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Role.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Role.ForeColor = System.Drawing.Color.Firebrick;
+            this.Role.FormattingEnabled = true;
+            this.Role.Items.AddRange(new object[] {
             "Admin",
             "Attendant"});
-            this.comboBox1.Location = new System.Drawing.Point(340, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 25);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.Text = "Select Role";
+            this.Role.Location = new System.Drawing.Point(340, 56);
+            this.Role.Name = "Role";
+            this.Role.Size = new System.Drawing.Size(151, 25);
+            this.Role.TabIndex = 12;
+            this.Role.Text = "Select Role";
             // 
             // label4
             // 
@@ -162,17 +168,31 @@
             this.label4.Text = "x";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkBox1.ForeColor = System.Drawing.Color.Firebrick;
+            this.checkBox1.Location = new System.Drawing.Point(370, 201);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(121, 21);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "show password";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 317);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Role);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Pass);
+            this.Controls.Add(this.Uname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -195,11 +215,12 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox Uname;
+        private TextBox Pass;
         private Button button2;
         private Button button1;
-        private ComboBox comboBox1;
+        private ComboBox Role;
         private Label label4;
+        private CheckBox checkBox1;
     }
 }
