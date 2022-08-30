@@ -62,6 +62,7 @@
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billsDGV)).BeginInit();
@@ -146,7 +147,7 @@
             this.total});
             this.orderDGV.Location = new System.Drawing.Point(354, 106);
             this.orderDGV.Name = "orderDGV";
-            this.orderDGV.RowHeadersVisible = false;
+            this.orderDGV.ReadOnly = true;
             this.orderDGV.RowTemplate.Height = 25;
             this.orderDGV.Size = new System.Drawing.Size(374, 117);
             this.orderDGV.TabIndex = 42;
@@ -155,26 +156,31 @@
             // 
             this.pid.HeaderText = "ID";
             this.pid.Name = "pid";
+            this.pid.ReadOnly = true;
             // 
             // pname
             // 
             this.pname.HeaderText = "NAME";
             this.pname.Name = "pname";
+            this.pname.ReadOnly = true;
             // 
             // pqty
             // 
             this.pqty.HeaderText = "QUANTITY";
             this.pqty.Name = "pqty";
+            this.pqty.ReadOnly = true;
             // 
             // pprice
             // 
             this.pprice.HeaderText = "PRICE";
             this.pprice.Name = "pprice";
+            this.pprice.ReadOnly = true;
             // 
             // total
             // 
             this.total.HeaderText = "TOTAL";
             this.total.Name = "total";
+            this.total.ReadOnly = true;
             // 
             // printb
             // 
@@ -295,16 +301,22 @@
             // 
             // billsDGV
             // 
+            this.billsDGV.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.billsDGV.AllowUserToAddRows = false;
+            this.billsDGV.AllowUserToDeleteRows = false;
+            this.billsDGV.AllowUserToResizeColumns = false;
+            this.billsDGV.AllowUserToResizeRows = false;
             this.billsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.billsDGV.BackgroundColor = System.Drawing.Color.White;
             this.billsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.billsDGV.Location = new System.Drawing.Point(356, 327);
             this.billsDGV.Name = "billsDGV";
+            this.billsDGV.ReadOnly = true;
             this.billsDGV.RowTemplate.Height = 25;
             this.billsDGV.Size = new System.Drawing.Size(374, 129);
             this.billsDGV.TabIndex = 46;
             this.billsDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.billsDGV_CellContentClick);
-            this.billsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.billsDGV_CellContentClick);
+            this.billsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.billsDGV_CellContentClick_1);
             // 
             // prodDGV1
             // 
@@ -313,6 +325,7 @@
             this.prodDGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.prodDGV1.Location = new System.Drawing.Point(12, 338);
             this.prodDGV1.Name = "prodDGV1";
+            this.prodDGV1.ReadOnly = true;
             this.prodDGV1.RowHeadersVisible = false;
             this.prodDGV1.RowTemplate.Height = 25;
             this.prodDGV1.Size = new System.Drawing.Size(268, 152);
@@ -416,11 +429,26 @@
             this.label2.TabIndex = 59;
             this.label2.Text = "ATTENDANT LIST";
             // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(653, 233);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 27);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "PRINT";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 534);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lattend);
             this.Controls.Add(this.ttl);
@@ -496,5 +524,6 @@
         private PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private Label label2;
+        private Button button1;
     }
 }

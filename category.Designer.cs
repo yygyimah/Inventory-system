@@ -155,6 +155,7 @@
             this.catDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.catDGV.Location = new System.Drawing.Point(366, 98);
             this.catDGV.Name = "catDGV";
+            this.catDGV.ReadOnly = true;
             this.catDGV.RowHeadersVisible = false;
             this.catDGV.RowTemplate.Height = 25;
             this.catDGV.Size = new System.Drawing.Size(343, 250);

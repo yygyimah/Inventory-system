@@ -138,7 +138,7 @@ namespace ShopRite_System
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            
+             
             e.Graphics.DrawString("Order Details", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Firebrick, new Point(230));
             e.Graphics.DrawString("ID:" + billsDGV.SelectedRows[0].Cells[0].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80,100));
             e.Graphics.DrawString("Attendant:" + billsDGV.SelectedRows[0].Cells[1].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 133));
@@ -169,6 +169,11 @@ namespace ShopRite_System
             Form1 home = new Form1();
             home.Show();
             this.Hide();
+        }
+
+        private void billsDGV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -243,6 +243,7 @@
             this.prodDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.prodDGV.Location = new System.Drawing.Point(328, 107);
             this.prodDGV.Name = "prodDGV";
+            this.prodDGV.ReadOnly = true;
             this.prodDGV.RowHeadersVisible = false;
             this.prodDGV.RowTemplate.Height = 25;
             this.prodDGV.Size = new System.Drawing.Size(383, 320);
