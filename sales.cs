@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing.Printing;
+using System.Xml.Linq;
+
 
 namespace ShopRite_System
 {
@@ -127,6 +130,7 @@ namespace ShopRite_System
         {
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
+                printDocument1.DefaultPageSettings.PaperSize = new PaperSize("pprnm", 285, 600);
                 printDocument1.Print();
             }
         }
@@ -138,7 +142,8 @@ namespace ShopRite_System
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-             
+            Graphics graphics = e.Graphics;
+
             e.Graphics.DrawString("Order Details", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Firebrick, new Point(230));
             e.Graphics.DrawString("ID:" + billsDGV.SelectedRows[0].Cells[0].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80,100));
             e.Graphics.DrawString("Attendant:" + billsDGV.SelectedRows[0].Cells[1].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 133));
@@ -173,6 +178,42 @@ namespace ShopRite_System
 
         private void billsDGV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (printPreviewDialog2.ShowDialog() == DialogResult.OK)
+            {
+                printDocument2.DefaultPageSettings.PaperSize = new PaperSize("pprnm", 285, 600);
+                printDocument2.Print();
+            }
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printPreviewDialog2_Load(object sender, EventArgs e)
+
+        {
+         
+        }
+
+        private void printDocument2_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+            e.Graphics.DrawString("Oder Details", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Firebrick, new Point(230));
+            e.Graphics.DrawString("ID:" + orderDGV.SelectedRows[0].Cells[0].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 100));
+            e.Graphics.DrawString("Name:" + orderDGV.SelectedRows[0].Cells[1].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 133));
+            e.Graphics.DrawString("Quantity:" + orderDGV.SelectedRows[0].Cells[2].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 166));
+            e.Graphics.DrawString("Price:" + orderDGV.SelectedRows[0].Cells[3].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 199));
+            e.Graphics.DrawString("Total $:" + orderDGV.SelectedRows[0].Cells[4].Value.ToString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 232));
+            e.Graphics.DrawString("SHOP RITE GHANA LTD", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Firebrick, new Point(230, 350));
+
+
+
 
         }
 

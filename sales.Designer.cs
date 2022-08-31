@@ -62,7 +62,8 @@
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.printPreviewDialog2 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument2 = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billsDGV)).BeginInit();
@@ -148,6 +149,7 @@
             this.orderDGV.Location = new System.Drawing.Point(354, 106);
             this.orderDGV.Name = "orderDGV";
             this.orderDGV.ReadOnly = true;
+            this.orderDGV.RowHeadersVisible = false;
             this.orderDGV.RowTemplate.Height = 25;
             this.orderDGV.Size = new System.Drawing.Size(374, 117);
             this.orderDGV.TabIndex = 42;
@@ -193,7 +195,7 @@
             this.printb.Name = "printb";
             this.printb.Size = new System.Drawing.Size(75, 27);
             this.printb.TabIndex = 40;
-            this.printb.Text = "PRINT";
+            this.printb.Text = "PRINT ";
             this.printb.UseVisualStyleBackColor = false;
             this.printb.Click += new System.EventHandler(this.printb_Click);
             // 
@@ -413,6 +415,7 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // printDocument1
             // 
@@ -429,26 +432,27 @@
             this.label2.TabIndex = 59;
             this.label2.Text = "ATTENDANT LIST";
             // 
-            // button1
+            // printPreviewDialog2
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(653, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 27);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "PRINT";
-            this.button1.UseVisualStyleBackColor = false;
+            this.printPreviewDialog2.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog2.Document = this.printDocument2;
+            this.printPreviewDialog2.Enabled = true;
+            this.printPreviewDialog2.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog2.Icon")));
+            this.printPreviewDialog2.Name = "printPreviewDialog2";
+            this.printPreviewDialog2.Visible = false;
+            this.printPreviewDialog2.Load += new System.EventHandler(this.printPreviewDialog2_Load);
+            // 
+            // printDocument2
+            // 
+            this.printDocument2.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument2_PrintPage);
             // 
             // sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 534);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lattend);
             this.Controls.Add(this.ttl);
@@ -524,6 +528,7 @@
         private PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private Label label2;
-        private Button button1;
+        private PrintPreviewDialog printPreviewDialog2;
+        private System.Drawing.Printing.PrintDocument printDocument2;
     }
 }
